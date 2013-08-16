@@ -1,0 +1,16 @@
+{
+  "name": "instaclone",
+  "version": "0.0.1",
+  "main": "app.php",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#~3.0.0-rc1",
+    "caman": "git://github.com/meltingice/CamanJS.git#~4.1.2"
+  }
+}
