@@ -4,9 +4,13 @@ Silex-Bootstrap: https://github.com/bobdenotter/silex-bootstrap/blob/master/inde
 Quick web apps using silex: http://whateverthing.com/blog/2013/07/01/quick-web-apps-part-three/
 
 ===========
-instalclone
+instaclone
 ===========
 
 Howto create an instagram like service using Silex and Camanjs
 
+Installation:
 
+1) bower install
+2) composer install
+3) mkdir uploads && chmod 777 uploads
