@@ -18,3 +18,6 @@ References:
 
 * Silex-Bootstrap: https://github.com/bobdenotter/silex-bootstrap/blob/master/index.php
 * Quick web apps using silex: http://whateverthing.com/blog/2013/07/01/quick-web-apps-part-three/
+* http://stackoverflow.com/questions/17040283/apply-the-camanjs-filter-on-the-original-image
+* http://stackoverflow.com/questions/15818680/using-preset-filters-from-camanjs-api
+
