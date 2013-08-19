@@ -1,0 +1,51 @@
+{% include '_header.twig' %}
+
+	 <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">{{title}}</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+    	<!--
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+    -->
+    	<br />
+ 			<div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Upload image here</h3>
+        </div>
+        <div class="panel-body">
+          Drag an image here
+					<form enctype="multipart/form-data" action="" method="POST">
+					    <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+					    Upload this file:
+					<br><br>
+					<input name="image" type="file" />
+					<br><br>
+					    <input type="submit" value="Send File" />
+					</form>
+        </div>
+      </div>
+
+		</div>
+
+    </div><!-- /.container -->
+
+
+{% include '_footer.twig' %}
