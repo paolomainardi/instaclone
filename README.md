@@ -16,6 +16,9 @@ Installation:
 
 References:
 
+* Silex documentation: http://silex.sensiolabs.org/documentation
+* Bootstrap documentation: http://getbootstrap.com/components
+* CamanJS: http://camanjs.com/examples/
 * Silex-Bootstrap: https://github.com/bobdenotter/silex-bootstrap/blob/master/index.php
 * Quick web apps using silex: http://whateverthing.com/blog/2013/07/01/quick-web-apps-part-three/
 * http://stackoverflow.com/questions/17040283/apply-the-camanjs-filter-on-the-original-image
