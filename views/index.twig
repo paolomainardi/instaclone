@@ -42,6 +42,7 @@
 					</form>
         </div>
         <!-- -->
+        {% if image_path is defined %}
         <div class="well">
         	<img id="image-canvas" src="{{image_path}}" />
         	<br /> <br />
@@ -52,6 +53,7 @@
 					  <button id="save-button" type="button" class="btn btn-primary">Save</button>
 					</div>
         </div>
+        {% endif %}
       </div>
 
 		</div>
