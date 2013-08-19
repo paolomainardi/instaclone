@@ -7,8 +7,7 @@ Quick web apps using silex: http://whateverthing.com/blog/2013/07/01/quick-web-a
 instaclone
 ===========
 
-[![hp][1]](https://raw.github.com/paolomainardi/instaclone/master/screenshots/alpha1.png )
-
+![InstaClone](https://raw.github.com/paolomainardi/instaclone/master/screenshots/alpha1.png)
 
 Howto create an instagram like service using Silex and Camanjs
 
