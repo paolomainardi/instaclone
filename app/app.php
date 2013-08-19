@@ -13,8 +13,8 @@ $app->get("/", function () use ($app) {
 
     // check if image exists in session
     if ($image = $app['session']->get('image')) {
-    	$image_path = 'uploads' . '/' . $image;
-    	$twigvars['image_path'] = $image_path . '.resized.jpg';
+      $image_path = 'uploads' . '/' . $image;
+      $twigvars['image_path'] = $image_path . '.resized.jpg';
     }
 
     return $app['twig']->render('index.twig', $twigvars);
@@ -32,7 +32,7 @@ $app->post('/', function(Request $request) use ($app) {
         list($width, $height) = getimagesize($image->getPathName());
         if ($width < 639) {
           $subRequest = Request::create('/');
-		  		return $app->handle($subRequest, HttpKernelInterface::SUB_REQUEST);
+          return $app->handle($subRequest, HttpKernelInterface::SUB_REQUEST);
         }
 
         // save image
@@ -54,7 +54,7 @@ $app->post('/', function(Request $request) use ($app) {
         $app['session']->set('image', basename($temp_name_path));
     }
 
-  	// redirect to hp
-  	$url = $request->getUriForPath('/');
-  	return $app->redirect($url);
+    // redirect to hp
+    $url = $request->getUriForPath('/');
+    return $app->redirect($url);
 });
