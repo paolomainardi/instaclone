@@ -7,10 +7,12 @@ Quick web apps using silex: http://whateverthing.com/blog/2013/07/01/quick-web-a
 instaclone
 ===========
 
+![InstaClone](https://raw.github.com/paolomainardi/instaclone/master/screenshots/alpha1.png)
+
 Howto create an instagram like service using Silex and Camanjs
 
 Installation:
 
-1) bower install
-2) composer install
-3) mkdir uploads && chmod 777 uploads
+* bower install
+* composer install
+* mkdir uploads && chmod 777 uploads
