@@ -8,6 +8,9 @@ $app->register(new Silex\Provider\SessionServiceProvider());
 // register imagine service provider
 $app->register(new Neutron\Silex\Provider\ImagineServiceProvider());
 
+// symfony url generator
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+
 // set debug mode on
 $app['debug'] = true;
 

@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">{{title}}</a>
+          <a class="navbar-brand" href="#">Instaclone</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -25,33 +25,45 @@
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
     -->
+    {% if error is defined %}
+      <br />
+	    <div class="alert alert-danger">
+		  	<p>{{error}}</p>
+			</div>
+		{% endif %}
     	<br />
  			<div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Upload image here</h3>
         </div>
         <div class="panel-body">
-          Drag an image here
 					<form enctype="multipart/form-data" action="" method="POST">
 					    <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
-					    Upload this file:
+					    Upload image:
 					<br><br>
 					<input name="image" type="file" />
 					<br><br>
 					    <input type="submit" value="Send File" />
 					</form>
         </div>
-        <!-- -->
+
+        <!-- if image exists -->
         {% if image_path is defined %}
         <div class="well">
-        	<img id="image-canvas" src="{{image_path}}" />
+        	<img id="image-canvas" class="img-thumbnail" src="{{image_path}}" />
         	<br /> <br />
-        	<div class="btn-group">
-					  <button id="vintage-button" type="button" class="btn btn-default">Vintage</button>
-					  <button id="vignette-button" type="button" class="btn btn-default">Vignette</button>
-					  <button id="normal-button" type="button" class="btn btn-default">Normal</button>
-					  <button id="save-button" type="button" class="btn btn-primary">Save</button>
+	        <div class="btn-group filter-buttons">
+	        	<p>
+	        	{% for key,preset in imagine_presets %}
+		          <button type="button" data-preset="{{key}}" class="btn btn-primary btn-lg">{{preset}}</button>
+		        {% endfor %}
+		      	</p>
 					</div>
+		      <button type="button" id="save-button" class="btn btn-success btn-lg"> Save </button>
+					<!--
+						<label> URL </label>
+				 		<input type="text" size="100" disabled="disabled" value="{{site_base_url}}{{image_path}}">
+				 	-->
         </div>
         {% endif %}
       </div>
