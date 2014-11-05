@@ -5,7 +5,7 @@ instaclone
 ===========
 
 Disclaimer: 
-This is just a proof-of-concept, i've used to teach the basic of composer, bower and silex.
+This is just a proof-of-concept, i've used to teach the basics of composer, bower and silex to my students.
 
 ![InstaClone](https://raw.github.com/paolomainardi/instaclone/master/screenshots/alpha1.png)
 
