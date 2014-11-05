@@ -4,6 +4,9 @@
 instaclone
 ===========
 
+Disclaimer: 
+This is just a proof-of-concept, i've used to teach the basic of composer, bower and silex.
+
 ![InstaClone](https://raw.github.com/paolomainardi/instaclone/master/screenshots/alpha1.png)
 
 Howto create an instagram like service using Silex and Camanjs
